@@ -1,0 +1,101 @@
+.modal {
+    display: flex; /* Cambia display de none a flex para mostrar el modal */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+    overflow: auto; /* Habilita el desplazamiento si el contenido es demasiado grande */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .modal-content {
+    background-color: #fff; /* Fondo blanco */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000; /* Borde negro */
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  .close {
+    color: #000; /* Texto negro */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #555; /* Texto gris oscuro cuando se pasa el mouse */
+    text-decoration: none;
+  }
+  
+  /* Estilos para la tabla en el modal */
+  .modal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .modal th, .modal td {
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .modal th {
+    background-color: #f2f2f2; /* Fondo gris claro para las cabeceras */
+  }
+  
+  .modal tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris claro para filas pares */
+  }
+  
+  .modal tr:hover {
+    background-color: #ddd; /* Fondo gris cuando se pasa el mouse */
+  }
+  
+  .modal input[type="text"],
+  .modal input[type="number"],
+  .modal button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(30% - 15px);
+    margin-right: 15px;
+  }
+  
+  .modal input[type="number"].small-input {
+    width: calc(10% - 15px);
+  }
+  
+  .modal button[type="submit"] {
+    background-color: #20B2AA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal button[type="submit"]:hover {
+    background-color: #3CB371;
+  }
+  
+  .action-button {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #20B2AA;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .action-button:hover {
+    background-color: #3CB371;
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Consulta de Libros en la Biblioteca Virtual</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/book_logo.png" alt="Logo de la Biblioteca">
+            <h1>Consulta de Libros en la Biblioteca Virtual</h1>
+        </div>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Buscar Libros</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar libros...">
+                <select id="search-filter">
+                    <option value="autor">Autor</option>
+                    <option value="nombre">Nombre del Libro</option>
+                    <option value="palabra">Palabra Clave</option>
+                    <option value="isbn">ISBN</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section id="results">
+            <h2>Resultados de la Búsqueda</h2>
+            <div id="books-list">
+                <!-- Aquí se mostrarán los resultados de la búsqueda -->
+            </div>
+        </section>
+        <section id="cover">
+            <h2>Libros Destacados</h2>
+            <div class="cover-images">
+                <img src="images/cover1.jpg" alt="Libro 1">
+                <img src="images/cover2.jpg" alt="Libro 2">
+                <img src="images/cover3.jpg" alt="Libro 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca - Realizado por Osmar Jose Perez Ricardo</p>
+    </footer>
+    <script src="src/data.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
